@@ -71,16 +71,16 @@
     
     [self.view addSubview:spiderView];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        spiderView.valueArr = @[@[@"30",@"40",@"60",@"25",@"100",@"70",@"80"]];
-        [spiderView yl_reloadData];
-    });
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        spiderView.valueArr = @[@[@"30",@"40",@"60",@"25",@"100",@"70",@"80"]];
+//        [spiderView yl_reloadData];
+//    });
     
-    //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-    //        spiderView.valueArr = @[@[@"20",@"60",@"80",@"90",@"35",@"65",@"100"],
-    //                                @[@"30",@"40",@"60",@"25",@"100",@"70",@"80"]];
-    //        [spiderView yl_reloadDataAtIndex:0];
-    //    });
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        spiderView.valueArr = @[@[@"20",@"60",@"80",@"90",@"35",@"65",@"100"],
+                                @[@"30",@"40",@"60",@"25",@"100",@"70",@"80"]];
+        [spiderView yl_reloadDataAtIndex:0];
+    });
 }
 
 - (void)didReceiveMemoryWarning {
