@@ -16,7 +16,7 @@
 /// 能力值描述数组
 @property (nonatomic, copy) NSArray<NSString *> *valueDescArr;
 
-/// 蜘蛛图需要分几个区
+/// 蜘蛛图需要分几个区，默认4个分区
 @property (nonatomic, assign) NSInteger areaCount;
 
 /// 最大能力值，输入的能力值数组会以这个最大能力得出比例，然后显示相应的长度
@@ -37,10 +37,10 @@
 /// 分隔线颜色
 @property (nonatomic, strong) UIColor *separatorLineColor;
 
-/// 能力值描述标签 字体
+/// 能力值描述标签 字体 默认 12号字体
 @property (nonatomic, strong) UIFont *descFont;
 
-/// 能力值描述标签 颜色
+/// 能力值描述标签 颜色 默认RGB 119 119 119 1.0
 @property (nonatomic, strong) UIColor *descColor;
 
 /// 配置能力图相关数据, 切记在初始化所有参数之后调用
