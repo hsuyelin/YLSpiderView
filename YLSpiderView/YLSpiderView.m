@@ -216,7 +216,6 @@
     NSArray *tmpMArr = [[self.yl_bgPointMArr lastObject] copy];
     for (NSInteger k = 0; k < tmpMArr.count; k ++) {
         CGPoint tmpCurrentPoint = [tmpMArr[k] CGPointValue];
-        
         [path addLineToPoint:tmpCurrentPoint];
         [path moveToPoint:_yl_originPoint];
     }
@@ -297,7 +296,7 @@
     return _yl_bgPointMArr;
 }
 
-- (NSMutableArray<NSArray *>  *)yl_valuePointMArr
+- (NSMutableArray<NSArray *> *)yl_valuePointMArr
 {
     if (!_yl_valuePointMArr) {
         _yl_valuePointMArr = [[NSMutableArray alloc] init];
